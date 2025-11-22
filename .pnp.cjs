@@ -19,6 +19,10 @@ const RAW_RUNTIME_STATE =
       "reference": "workspace:client"\
     },\
     {\
+      "name": "contracts",\
+      "reference": "workspace:contracts"\
+    },\
+    {\
       "name": "server",\
       "reference": "workspace:server"\
     },\
@@ -33,6 +37,7 @@ const RAW_RUNTIME_STATE =
   "fallbackExclusionList": [\
     ["@onchain-aura/shared", ["workspace:shared"]],\
     ["client", ["workspace:client"]],\
+    ["contracts", ["workspace:contracts"]],\
     ["onchain-aura", ["workspace:."]],\
     ["server", ["workspace:server"]]\
   ],\
@@ -2567,6 +2572,22 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@noble/curves", [\
+      ["npm:1.4.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/@noble-curves-npm-1.4.2-6f76b01394-10c0.zip/node_modules/@noble/curves/",\
+        "packageDependencies": [\
+          ["@noble/curves", "npm:1.4.2"],\
+          ["@noble/hashes", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:1.8.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/@noble-curves-npm-1.8.2-f839435750-10c0.zip/node_modules/@noble/curves/",\
+        "packageDependencies": [\
+          ["@noble/curves", "npm:1.8.2"],\
+          ["@noble/hashes", "npm:1.7.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:1.9.1", {\
         "packageLocation": "../../../.yarn/berry/cache/@noble-curves-npm-1.9.1-1c61264bb0-10c0.zip/node_modules/@noble/curves/",\
         "packageDependencies": [\
@@ -2585,6 +2606,20 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@noble/hashes", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@noble-hashes-npm-1.4.0-9389282fd6-10c0.zip/node_modules/@noble/hashes/",\
+        "packageDependencies": [\
+          ["@noble/hashes", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["npm:1.7.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/@noble-hashes-npm-1.7.2-1f8581843d-10c0.zip/node_modules/@noble/hashes/",\
+        "packageDependencies": [\
+          ["@noble/hashes", "npm:1.7.2"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:1.8.0", {\
         "packageLocation": "../../../.yarn/berry/cache/@noble-hashes-npm-1.8.0-a397449e64-10c0.zip/node_modules/@noble/hashes/",\
         "packageDependencies": [\
@@ -2620,6 +2655,215 @@ const RAW_RUNTIME_STATE =
           ["@nodelib/fs.scandir", "npm:2.1.5"],\
           ["@nodelib/fs.walk", "npm:1.2.8"],\
           ["fastq", "npm:1.19.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/edr", [\
+      ["npm:0.12.0-next.14", {\
+        "packageLocation": "../../../.yarn/berry/cache/@nomicfoundation-edr-npm-0.12.0-next.14-e943d1bcb9-10c0.zip/node_modules/@nomicfoundation/edr/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/edr", "npm:0.12.0-next.14"],\
+          ["@nomicfoundation/edr-darwin-arm64", "npm:0.12.0-next.14"],\
+          ["@nomicfoundation/edr-darwin-x64", "npm:0.12.0-next.14"],\
+          ["@nomicfoundation/edr-linux-arm64-gnu", "npm:0.12.0-next.14"],\
+          ["@nomicfoundation/edr-linux-arm64-musl", "npm:0.12.0-next.14"],\
+          ["@nomicfoundation/edr-linux-x64-gnu", "npm:0.12.0-next.14"],\
+          ["@nomicfoundation/edr-linux-x64-musl", "npm:0.12.0-next.14"],\
+          ["@nomicfoundation/edr-win32-x64-msvc", "npm:0.12.0-next.14"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/edr-darwin-arm64", [\
+      ["npm:0.12.0-next.14", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-edr-darwin-arm64-npm-0.12.0-next.14-439197c3de/node_modules/@nomicfoundation/edr-darwin-arm64/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/edr-darwin-arm64", "npm:0.12.0-next.14"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/edr-darwin-x64", [\
+      ["npm:0.12.0-next.14", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-edr-darwin-x64-npm-0.12.0-next.14-c12645c1e1/node_modules/@nomicfoundation/edr-darwin-x64/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/edr-darwin-x64", "npm:0.12.0-next.14"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/edr-linux-arm64-gnu", [\
+      ["npm:0.12.0-next.14", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-edr-linux-arm64-gnu-npm-0.12.0-next.14-fa691e34de/node_modules/@nomicfoundation/edr-linux-arm64-gnu/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/edr-linux-arm64-gnu", "npm:0.12.0-next.14"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/edr-linux-arm64-musl", [\
+      ["npm:0.12.0-next.14", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-edr-linux-arm64-musl-npm-0.12.0-next.14-45bb18283e/node_modules/@nomicfoundation/edr-linux-arm64-musl/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/edr-linux-arm64-musl", "npm:0.12.0-next.14"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/edr-linux-x64-gnu", [\
+      ["npm:0.12.0-next.14", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-edr-linux-x64-gnu-npm-0.12.0-next.14-472ff426b0/node_modules/@nomicfoundation/edr-linux-x64-gnu/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/edr-linux-x64-gnu", "npm:0.12.0-next.14"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/edr-linux-x64-musl", [\
+      ["npm:0.12.0-next.14", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-edr-linux-x64-musl-npm-0.12.0-next.14-92fffef5c2/node_modules/@nomicfoundation/edr-linux-x64-musl/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/edr-linux-x64-musl", "npm:0.12.0-next.14"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/edr-win32-x64-msvc", [\
+      ["npm:0.12.0-next.14", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-edr-win32-x64-msvc-npm-0.12.0-next.14-43213d79a9/node_modules/@nomicfoundation/edr-win32-x64-msvc/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/edr-win32-x64-msvc", "npm:0.12.0-next.14"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/hardhat-errors", [\
+      ["npm:3.0.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/@nomicfoundation-hardhat-errors-npm-3.0.5-6c6baaea8e-10c0.zip/node_modules/@nomicfoundation/hardhat-errors/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/hardhat-errors", "npm:3.0.5"],\
+          ["@nomicfoundation/hardhat-utils", "npm:3.0.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/hardhat-utils", [\
+      ["npm:3.0.5", {\
+        "packageLocation": "../../../.yarn/berry/cache/@nomicfoundation-hardhat-utils-npm-3.0.5-bdf3f6d591-10c0.zip/node_modules/@nomicfoundation/hardhat-utils/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/hardhat-utils", "npm:3.0.5"],\
+          ["@streamparser/json-node", "npm:0.0.22"],\
+          ["debug", "virtual:2b51d83636a42cdc1434b9a574324a754fe902f0d8f47c84f37fc9dd9e42f0be9d5cd9599ca4ccf8c80b9be5756c7aea000403217e2fd7a585437af81d091cfd#npm:4.4.3"],\
+          ["env-paths", "npm:2.2.1"],\
+          ["ethereum-cryptography", "npm:2.2.1"],\
+          ["fast-equals", "npm:5.3.3"],\
+          ["json-stream-stringify", "npm:3.1.6"],\
+          ["rfdc", "npm:1.4.1"],\
+          ["undici", "npm:6.22.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/hardhat-zod-utils", [\
+      ["npm:3.0.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/@nomicfoundation-hardhat-zod-utils-npm-3.0.1-eccef83d76-10c0.zip/node_modules/@nomicfoundation/hardhat-zod-utils/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/hardhat-zod-utils", "npm:3.0.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:b83d93cad3c3e3547fe898760530939c8a3e090683168f9131c0ba671a5901632bf4f345480604d403b92d4c28928e83d288b9a647a843d6dd7f0b33412a8e1e#npm:3.0.1", {\
+        "packageLocation": "./.yarn/__virtual__/@nomicfoundation-hardhat-zod-utils-virtual-907a0411ae/4/.yarn/berry/cache/@nomicfoundation-hardhat-zod-utils-npm-3.0.1-eccef83d76-10c0.zip/node_modules/@nomicfoundation/hardhat-zod-utils/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/hardhat-errors", "npm:3.0.5"],\
+          ["@nomicfoundation/hardhat-utils", "npm:3.0.5"],\
+          ["@nomicfoundation/hardhat-zod-utils", "virtual:b83d93cad3c3e3547fe898760530939c8a3e090683168f9131c0ba671a5901632bf4f345480604d403b92d4c28928e83d288b9a647a843d6dd7f0b33412a8e1e#npm:3.0.1"],\
+          ["@types/zod", null],\
+          ["zod", "npm:3.25.76"]\
+        ],\
+        "packagePeers": [\
+          "@types/zod",\
+          "zod"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/solidity-analyzer", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/@nomicfoundation-solidity-analyzer-npm-0.1.2-2e828800f8-10c0.zip/node_modules/@nomicfoundation/solidity-analyzer/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/solidity-analyzer", "npm:0.1.2"],\
+          ["@nomicfoundation/solidity-analyzer-darwin-arm64", "npm:0.1.2"],\
+          ["@nomicfoundation/solidity-analyzer-darwin-x64", "npm:0.1.2"],\
+          ["@nomicfoundation/solidity-analyzer-linux-arm64-gnu", "npm:0.1.2"],\
+          ["@nomicfoundation/solidity-analyzer-linux-arm64-musl", "npm:0.1.2"],\
+          ["@nomicfoundation/solidity-analyzer-linux-x64-gnu", "npm:0.1.2"],\
+          ["@nomicfoundation/solidity-analyzer-linux-x64-musl", "npm:0.1.2"],\
+          ["@nomicfoundation/solidity-analyzer-win32-x64-msvc", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/solidity-analyzer-darwin-arm64", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-solidity-analyzer-darwin-arm64-npm-0.1.2-8c7b04628e/node_modules/@nomicfoundation/solidity-analyzer-darwin-arm64/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/solidity-analyzer-darwin-arm64", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/solidity-analyzer-darwin-x64", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-solidity-analyzer-darwin-x64-npm-0.1.2-47058bbaef/node_modules/@nomicfoundation/solidity-analyzer-darwin-x64/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/solidity-analyzer-darwin-x64", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/solidity-analyzer-linux-arm64-gnu", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-solidity-analyzer-linux-arm64-gnu-npm-0.1.2-2457aecab7/node_modules/@nomicfoundation/solidity-analyzer-linux-arm64-gnu/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/solidity-analyzer-linux-arm64-gnu", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/solidity-analyzer-linux-arm64-musl", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-solidity-analyzer-linux-arm64-musl-npm-0.1.2-b4c0ecd552/node_modules/@nomicfoundation/solidity-analyzer-linux-arm64-musl/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/solidity-analyzer-linux-arm64-musl", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/solidity-analyzer-linux-x64-gnu", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-solidity-analyzer-linux-x64-gnu-npm-0.1.2-bbf43495c2/node_modules/@nomicfoundation/solidity-analyzer-linux-x64-gnu/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/solidity-analyzer-linux-x64-gnu", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/solidity-analyzer-linux-x64-musl", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-solidity-analyzer-linux-x64-musl-npm-0.1.2-e65b3d53b7/node_modules/@nomicfoundation/solidity-analyzer-linux-x64-musl/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/solidity-analyzer-linux-x64-musl", "npm:0.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@nomicfoundation/solidity-analyzer-win32-x64-msvc", [\
+      ["npm:0.1.2", {\
+        "packageLocation": "./.yarn/unplugged/@nomicfoundation-solidity-analyzer-win32-x64-msvc-npm-0.1.2-e0f3b30efb/node_modules/@nomicfoundation/solidity-analyzer-win32-x64-msvc/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/solidity-analyzer-win32-x64-msvc", "npm:0.1.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2905,6 +3149,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@scure/base", [\
+      ["npm:1.1.9", {\
+        "packageLocation": "../../../.yarn/berry/cache/@scure-base-npm-1.1.9-75a8521e88-10c0.zip/node_modules/@scure/base/",\
+        "packageDependencies": [\
+          ["@scure/base", "npm:1.1.9"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:1.2.6", {\
         "packageLocation": "../../../.yarn/berry/cache/@scure-base-npm-1.2.6-f26c4d7404-10c0.zip/node_modules/@scure/base/",\
         "packageDependencies": [\
@@ -2914,6 +3165,16 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@scure/bip32", [\
+      ["npm:1.4.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@scure-bip32-npm-1.4.0-95f7513221-10c0.zip/node_modules/@scure/bip32/",\
+        "packageDependencies": [\
+          ["@noble/curves", "npm:1.4.2"],\
+          ["@noble/hashes", "npm:1.4.0"],\
+          ["@scure/base", "npm:1.1.9"],\
+          ["@scure/bip32", "npm:1.4.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:1.7.0", {\
         "packageLocation": "../../../.yarn/berry/cache/@scure-bip32-npm-1.7.0-27d1648bc5-10c0.zip/node_modules/@scure/bip32/",\
         "packageDependencies": [\
@@ -2926,12 +3187,30 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@scure/bip39", [\
+      ["npm:1.3.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/@scure-bip39-npm-1.3.0-1d74c5c469-10c0.zip/node_modules/@scure/bip39/",\
+        "packageDependencies": [\
+          ["@noble/hashes", "npm:1.4.0"],\
+          ["@scure/base", "npm:1.1.9"],\
+          ["@scure/bip39", "npm:1.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:1.6.0", {\
         "packageLocation": "../../../.yarn/berry/cache/@scure-bip39-npm-1.6.0-63a27ac0b7-10c0.zip/node_modules/@scure/bip39/",\
         "packageDependencies": [\
           ["@noble/hashes", "npm:1.8.0"],\
           ["@scure/base", "npm:1.2.6"],\
           ["@scure/bip39", "npm:1.6.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@sentry/core", [\
+      ["npm:9.47.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/@sentry-core-npm-9.47.1-e8e99dac8d-10c0.zip/node_modules/@sentry/core/",\
+        "packageDependencies": [\
+          ["@sentry/core", "npm:9.47.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2961,6 +3240,25 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@sinonjs/commons", "npm:3.0.1"],\
           ["@sinonjs/fake-timers", "npm:13.0.5"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@streamparser/json", [\
+      ["npm:0.0.22", {\
+        "packageLocation": "../../../.yarn/berry/cache/@streamparser-json-npm-0.0.22-e544b85e44-10c0.zip/node_modules/@streamparser/json/",\
+        "packageDependencies": [\
+          ["@streamparser/json", "npm:0.0.22"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@streamparser/json-node", [\
+      ["npm:0.0.22", {\
+        "packageLocation": "../../../.yarn/berry/cache/@streamparser-json-node-npm-0.0.22-f7aeb1b38b-10c0.zip/node_modules/@streamparser/json-node/",\
+        "packageDependencies": [\
+          ["@streamparser/json", "npm:0.0.22"],\
+          ["@streamparser/json-node", "npm:0.0.22"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4160,6 +4458,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["adm-zip", [\
+      ["npm:0.4.16", {\
+        "packageLocation": "../../../.yarn/berry/cache/adm-zip-npm-0.4.16-8a2fd28feb-10c0.zip/node_modules/adm-zip/",\
+        "packageDependencies": [\
+          ["adm-zip", "npm:0.4.16"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["agent-base", [\
       ["npm:7.1.4", {\
         "packageLocation": "../../../.yarn/berry/cache/agent-base-npm-7.1.4-cb8b4604d5-10c0.zip/node_modules/agent-base/",\
@@ -4821,6 +5128,13 @@ const RAW_RUNTIME_STATE =
           ["supports-color", "npm:7.2.0"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:5.6.2", {\
+        "packageLocation": "../../../.yarn/berry/cache/chalk-npm-5.6.2-ecbd482482-10c0.zip/node_modules/chalk/",\
+        "packageDependencies": [\
+          ["chalk", "npm:5.6.2"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["char-regex", [\
@@ -5101,6 +5415,16 @@ const RAW_RUNTIME_STATE =
           ["content-type", "npm:1.0.5"]\
         ],\
         "linkType": "HARD"\
+      }]\
+    ]],\
+    ["contracts", [\
+      ["workspace:contracts", {\
+        "packageLocation": "./contracts/",\
+        "packageDependencies": [\
+          ["contracts", "workspace:contracts"],\
+          ["hardhat", "npm:3.0.15"]\
+        ],\
+        "linkType": "SOFT"\
       }]\
     ]],\
     ["convert-source-map", [\
@@ -5425,6 +5749,17 @@ const RAW_RUNTIME_STATE =
           ["enhanced-resolve", "npm:5.18.3"],\
           ["graceful-fs", "npm:4.2.11"],\
           ["tapable", "npm:2.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["enquirer", [\
+      ["npm:2.4.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/enquirer-npm-2.4.1-d71b2b33c1-10c0.zip/node_modules/enquirer/",\
+        "packageDependencies": [\
+          ["ansi-colors", "npm:4.1.3"],\
+          ["enquirer", "npm:2.4.1"],\
+          ["strip-ansi", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5846,6 +6181,19 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["ethereum-cryptography", [\
+      ["npm:2.2.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/ethereum-cryptography-npm-2.2.1-b60ce015cb-10c0.zip/node_modules/ethereum-cryptography/",\
+        "packageDependencies": [\
+          ["@noble/curves", "npm:1.4.2"],\
+          ["@noble/hashes", "npm:1.4.0"],\
+          ["@scure/bip32", "npm:1.4.0"],\
+          ["@scure/bip39", "npm:1.3.0"],\
+          ["ethereum-cryptography", "npm:2.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["eventemitter3", [\
       ["npm:5.0.1", {\
         "packageLocation": "../../../.yarn/berry/cache/eventemitter3-npm-5.0.1-5e423b7df3-10c0.zip/node_modules/eventemitter3/",\
@@ -5965,6 +6313,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/fast-diff-npm-1.3.0-9f19e3b743-10c0.zip/node_modules/fast-diff/",\
         "packageDependencies": [\
           ["fast-diff", "npm:1.3.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["fast-equals", [\
+      ["npm:5.3.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/fast-equals-npm-5.3.3-c077a1c406-10c0.zip/node_modules/fast-equals/",\
+        "packageDependencies": [\
+          ["fast-equals", "npm:5.3.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6388,6 +6745,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["get-tsconfig", [\
+      ["npm:4.13.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/get-tsconfig-npm-4.13.0-009b232bdd-10c0.zip/node_modules/get-tsconfig/",\
+        "packageDependencies": [\
+          ["get-tsconfig", "npm:4.13.0"],\
+          ["resolve-pkg-maps", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["glob", [\
       ["npm:10.5.0", {\
         "packageLocation": "../../../.yarn/berry/cache/glob-npm-10.5.0-b569657078-10c0.zip/node_modules/glob/",\
@@ -6519,6 +6886,34 @@ const RAW_RUNTIME_STATE =
           ["source-map", "npm:0.6.1"],\
           ["uglify-js", "npm:3.19.3"],\
           ["wordwrap", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["hardhat", [\
+      ["npm:3.0.15", {\
+        "packageLocation": "../../../.yarn/berry/cache/hardhat-npm-3.0.15-b83d93cad3-10c0.zip/node_modules/hardhat/",\
+        "packageDependencies": [\
+          ["@nomicfoundation/edr", "npm:0.12.0-next.14"],\
+          ["@nomicfoundation/hardhat-errors", "npm:3.0.5"],\
+          ["@nomicfoundation/hardhat-utils", "npm:3.0.5"],\
+          ["@nomicfoundation/hardhat-zod-utils", "virtual:b83d93cad3c3e3547fe898760530939c8a3e090683168f9131c0ba671a5901632bf4f345480604d403b92d4c28928e83d288b9a647a843d6dd7f0b33412a8e1e#npm:3.0.1"],\
+          ["@nomicfoundation/solidity-analyzer", "npm:0.1.2"],\
+          ["@sentry/core", "npm:9.47.1"],\
+          ["adm-zip", "npm:0.4.16"],\
+          ["chalk", "npm:5.6.2"],\
+          ["chokidar", "npm:4.0.3"],\
+          ["debug", "virtual:2b51d83636a42cdc1434b9a574324a754fe902f0d8f47c84f37fc9dd9e42f0be9d5cd9599ca4ccf8c80b9be5756c7aea000403217e2fd7a585437af81d091cfd#npm:4.4.3"],\
+          ["enquirer", "npm:2.4.1"],\
+          ["ethereum-cryptography", "npm:2.2.1"],\
+          ["hardhat", "npm:3.0.15"],\
+          ["micro-eth-signer", "npm:0.14.0"],\
+          ["p-map", "npm:7.0.4"],\
+          ["resolve.exports", "npm:2.0.3"],\
+          ["semver", "npm:7.7.3"],\
+          ["tsx", "npm:4.20.6"],\
+          ["ws", "virtual:b83d93cad3c3e3547fe898760530939c8a3e090683168f9131c0ba671a5901632bf4f345480604d403b92d4c28928e83d288b9a647a843d6dd7f0b33412a8e1e#npm:8.18.3"],\
+          ["zod", "npm:3.25.76"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -6875,7 +7270,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/ws", null],\
           ["isows", "virtual:438d849afdef88db4c1421288704cc493fcdfc6cc4b1817d17cb5bcd83fef95609b30968a26ca001200300b6e44d30b8e5c4133b54836add8671332d2de44162#npm:1.0.7"],\
-          ["ws", "virtual:438d849afdef88db4c1421288704cc493fcdfc6cc4b1817d17cb5bcd83fef95609b30968a26ca001200300b6e44d30b8e5c4133b54836add8671332d2de44162#npm:8.18.3"]\
+          ["ws", "virtual:b83d93cad3c3e3547fe898760530939c8a3e090683168f9131c0ba671a5901632bf4f345480604d403b92d4c28928e83d288b9a647a843d6dd7f0b33412a8e1e#npm:8.18.3"]\
         ],\
         "packagePeers": [\
           "@types/ws",\
@@ -7593,6 +7988,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["json-stream-stringify", [\
+      ["npm:3.1.6", {\
+        "packageLocation": "../../../.yarn/berry/cache/json-stream-stringify-npm-3.1.6-1b674f905a-10c0.zip/node_modules/json-stream-stringify/",\
+        "packageDependencies": [\
+          ["json-stream-stringify", "npm:3.1.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["json5", [\
       ["npm:2.2.3", {\
         "packageLocation": "../../../.yarn/berry/cache/json5-npm-2.2.3-9962c55073-10c0.zip/node_modules/json5/",\
@@ -7885,6 +8289,28 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/methods-npm-1.1.2-92f6fdb39b-10c0.zip/node_modules/methods/",\
         "packageDependencies": [\
           ["methods", "npm:1.1.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["micro-eth-signer", [\
+      ["npm:0.14.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/micro-eth-signer-npm-0.14.0-a0d1ba0cb7-10c0.zip/node_modules/micro-eth-signer/",\
+        "packageDependencies": [\
+          ["@noble/curves", "npm:1.8.2"],\
+          ["@noble/hashes", "npm:1.7.2"],\
+          ["micro-eth-signer", "npm:0.14.0"],\
+          ["micro-packed", "npm:0.7.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["micro-packed", [\
+      ["npm:0.7.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/micro-packed-npm-0.7.3-b41f4feea8-10c0.zip/node_modules/micro-packed/",\
+        "packageDependencies": [\
+          ["@scure/base", "npm:1.2.6"],\
+          ["micro-packed", "npm:0.7.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -8859,6 +9285,24 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["resolve-pkg-maps", [\
+      ["npm:1.0.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/resolve-pkg-maps-npm-1.0.0-135b70c854-10c0.zip/node_modules/resolve-pkg-maps/",\
+        "packageDependencies": [\
+          ["resolve-pkg-maps", "npm:1.0.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["resolve.exports", [\
+      ["npm:2.0.3", {\
+        "packageLocation": "../../../.yarn/berry/cache/resolve.exports-npm-2.0.3-eb33ea72e9-10c0.zip/node_modules/resolve.exports/",\
+        "packageDependencies": [\
+          ["resolve.exports", "npm:2.0.3"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["restore-cursor", [\
       ["npm:3.1.0", {\
         "packageLocation": "../../../.yarn/berry/cache/restore-cursor-npm-3.1.0-52c5a4c98f-10c0.zip/node_modules/restore-cursor/",\
@@ -8884,6 +9328,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/reusify-npm-1.1.0-96242be57f-10c0.zip/node_modules/reusify/",\
         "packageDependencies": [\
           ["reusify", "npm:1.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["rfdc", [\
+      ["npm:1.4.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/rfdc-npm-1.4.1-1a1c63d052-10c0.zip/node_modules/rfdc/",\
+        "packageDependencies": [\
+          ["rfdc", "npm:1.4.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -9856,6 +10309,18 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["tsx", [\
+      ["npm:4.20.6", {\
+        "packageLocation": "../../../.yarn/berry/cache/tsx-npm-4.20.6-78231068b5-10c0.zip/node_modules/tsx/",\
+        "packageDependencies": [\
+          ["esbuild", "npm:0.25.12"],\
+          ["fsevents", "patch:fsevents@npm%3A2.3.3#optional!builtin<compat/fsevents>::version=2.3.3&hash=df0bf1"],\
+          ["get-tsconfig", "npm:4.13.0"],\
+          ["tsx", "npm:4.20.6"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["type-check", [\
       ["npm:0.4.0", {\
         "packageLocation": "../../../.yarn/berry/cache/type-check-npm-0.4.0-60565800ce-10c0.zip/node_modules/type-check/",\
@@ -9984,6 +10449,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/uint8array-extras-npm-1.5.0-30fc87691c-10c0.zip/node_modules/uint8array-extras/",\
         "packageDependencies": [\
           ["uint8array-extras", "npm:1.5.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["undici", [\
+      ["npm:6.22.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/undici-npm-6.22.0-4664dd0314-10c0.zip/node_modules/undici/",\
+        "packageDependencies": [\
+          ["undici", "npm:6.22.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -10165,7 +10639,7 @@ const RAW_RUNTIME_STATE =
           ["ox", "virtual:438d849afdef88db4c1421288704cc493fcdfc6cc4b1817d17cb5bcd83fef95609b30968a26ca001200300b6e44d30b8e5c4133b54836add8671332d2de44162#npm:0.9.6"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
           ["viem", "virtual:4e8206216e97aad0932c4c519b6faa870daedc5afe83e9b9679849e0d0967fe82da6f62f9be1043c6e7874f0972b105327bb827d4089891e2eead819a3fc8139#npm:2.39.3"],\
-          ["ws", "virtual:438d849afdef88db4c1421288704cc493fcdfc6cc4b1817d17cb5bcd83fef95609b30968a26ca001200300b6e44d30b8e5c4133b54836add8671332d2de44162#npm:8.18.3"]\
+          ["ws", "virtual:b83d93cad3c3e3547fe898760530939c8a3e090683168f9131c0ba671a5901632bf4f345480604d403b92d4c28928e83d288b9a647a843d6dd7f0b33412a8e1e#npm:8.18.3"]\
         ],\
         "packagePeers": [\
           "@types/typescript",\
@@ -10433,14 +10907,14 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:438d849afdef88db4c1421288704cc493fcdfc6cc4b1817d17cb5bcd83fef95609b30968a26ca001200300b6e44d30b8e5c4133b54836add8671332d2de44162#npm:8.18.3", {\
-        "packageLocation": "./.yarn/__virtual__/ws-virtual-9a4394949f/4/.yarn/berry/cache/ws-npm-8.18.3-665d39209d-10c0.zip/node_modules/ws/",\
+      ["virtual:b83d93cad3c3e3547fe898760530939c8a3e090683168f9131c0ba671a5901632bf4f345480604d403b92d4c28928e83d288b9a647a843d6dd7f0b33412a8e1e#npm:8.18.3", {\
+        "packageLocation": "./.yarn/__virtual__/ws-virtual-a499877ec7/4/.yarn/berry/cache/ws-npm-8.18.3-665d39209d-10c0.zip/node_modules/ws/",\
         "packageDependencies": [\
           ["@types/bufferutil", null],\
           ["@types/utf-8-validate", null],\
           ["bufferutil", null],\
           ["utf-8-validate", null],\
-          ["ws", "virtual:438d849afdef88db4c1421288704cc493fcdfc6cc4b1817d17cb5bcd83fef95609b30968a26ca001200300b6e44d30b8e5c4133b54836add8671332d2de44162#npm:8.18.3"]\
+          ["ws", "virtual:b83d93cad3c3e3547fe898760530939c8a3e090683168f9131c0ba671a5901632bf4f345480604d403b92d4c28928e83d288b9a647a843d6dd7f0b33412a8e1e#npm:8.18.3"]\
         ],\
         "packagePeers": [\
           "@types/bufferutil",\
@@ -10545,6 +11019,13 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["zod", [\
+      ["npm:3.25.76", {\
+        "packageLocation": "../../../.yarn/berry/cache/zod-npm-3.25.76-7de26333f8-10c0.zip/node_modules/zod/",\
+        "packageDependencies": [\
+          ["zod", "npm:3.25.76"]\
+        ],\
+        "linkType": "HARD"\
+      }],\
       ["npm:4.1.12", {\
         "packageLocation": "../../../.yarn/berry/cache/zod-npm-4.1.12-8e1ffc4d68-10c0.zip/node_modules/zod/",\
         "packageDependencies": [\
