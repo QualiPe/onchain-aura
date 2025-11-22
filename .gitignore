@@ -1,0 +1,24 @@
+node_modules
+dist
+build
+.env
+.env.local
+.DS_Store
+coverage
+.turbo
+.yarn
+*.log
+
+# Hardhat
+artifacts
+cache
+typechain
+
+# Vite
+.vite
+
+# Nest
+server/.cache
+server/.tsbuildinfo
+
+

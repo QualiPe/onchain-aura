@@ -1,0 +1,23 @@
+{
+  "name": "ai-web3-influencer",
+  "private": true,
+  "workspaces": [
+    "shared",
+    "contracts",
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n shared,server,client -c magenta,blue,green \"yarn workspace @ai-web3-influencer/shared dev\" \"yarn workspace server dev\" \"yarn workspace client dev\"",
+    "build": "yarn workspaces run build",
+    "test": "yarn workspace contracts test && yarn workspace server test",
+    "clean": "rimraf node_modules && rimraf **/node_modules && rimraf **/dist && rimraf contracts/artifacts contracts/cache server/.tsbuildinfo client/.vite"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.6.3"
+  }
+}
+
+
